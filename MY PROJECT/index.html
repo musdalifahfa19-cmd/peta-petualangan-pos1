@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Peta Petualangan Aritmatika Sosial — Pos 1</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+
+<!-- Layar Awal -->
+<main id="startScreen" class="screen active">
+  <section class="card startCard">
+    <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_t24tpvcu.json"
+                   background="transparent" speed="1" style="width:160px;height:160px;margin:auto" autoplay loop></lottie-player>
+    <h1 class="brand">🌈 Petualangan Aritmatika Sosial</h1>
+    <p class="lead">Siap menjelajahi dunia pasar dan belajar tentang keuntungan, timbangan, dan diskon seru?</p>
+    <label for="playerName">Masukkan nama kamu:</label>
+    <input id="playerName" type="text" placeholder="Contoh: Dinda / Kelompok 8">
+    <div class="btnRow">
+      <button id="btnStart" class="primary">🎮 Mulai Petualangan</button>
+    </div>
+  </section>
+</main>
+
+<!-- Layar Materi -->
+<section id="slideScreen" class="screen hidden">
+  <div id="slideContainer" class="card slideCard"></div>
+  <div class="controls">
+    <button id="prevBtn">⬅️</button>
+    <button id="nextBtn">➡️</button>
+  </div>
+</section>
+
+<!-- Musik & Efek -->
+<audio id="bgMusic" loop>
+  <source src="assets/sounds/happy-kids-background-music.mp3" type="audio/mpeg">
+</audio>
+<audio id="clickSound" src="assets/sounds/click.mp3"></audio>
+<audio id="correctSound" src="assets/sounds/correct.mp3"></audio>
+<audio id="wrongSound" src="assets/sounds/wrong.mp3"></audio>
+<audio id="getcoinSound" src="assets/sounds/getcoin.mp3"></audio>
+
+<button id="musicToggle" class="music-btn" title="Matikan / Nyalakan Musik">🔇</button>
+
+<script src="script.js"></script>
+</body>
+</html>
